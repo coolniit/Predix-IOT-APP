@@ -1,0 +1,9 @@
+applications:
+-
+  name: predix-iot-application-simulator
+  memory: 128M
+  buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+  no-route: true
+  env:
+    API_URL: https://predix-iot-application-api-<<YOUR-NAME>>.run.aws-usw02-pr.ice.predix.io/
+    INTERVAL: 30000

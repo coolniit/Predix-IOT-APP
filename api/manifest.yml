@@ -1,0 +1,14 @@
+applications:
+-
+  name: predix-iot-application-api
+  memory: 128M
+  buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+  host: predix-iot-application-api-<<YOUR-NAME>>
+  env:
+    CLIENT_ID: client
+    CLIENT_SECRET: secret
+    NOTIFICATION_CONFIGURATION_ID: f5571e79-b594-46d2-a116-1a2434448295
+    FROM_EMAIL: username@gmail.com
+    FROM_NAME: Your Name
+    RECIPIENT_EMAIL: username@gmail.com
+    RECIPIENT_NAME: Your Name
